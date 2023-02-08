@@ -1,6 +1,7 @@
 package co.edu.ucatolica.aves.aves.subtype;
 
 import co.edu.ucatolica.aves.aves.supertypeimp.Canto;
+import co.edu.ucatolica.aves.aves.supertypeimp.SinNado;
 import co.edu.ucatolica.aves.aves.supertypeimp.VueloConAlas;
 import co.edu.ucatolica.aves.aves.type.Ave;
 import org.slf4j.Logger;
@@ -14,5 +15,6 @@ public class Canario extends Ave {
         logger.debug("Instanciando canario");
         tipoSonido = new Canto();
         tipoVuelo = new VueloConAlas();
+        tipoNado = new SinNado();
     }
 }

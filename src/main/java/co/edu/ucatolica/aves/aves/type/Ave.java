@@ -1,5 +1,6 @@
 package co.edu.ucatolica.aves.aves.type;
 
+import co.edu.ucatolica.aves.aves.supertype.TipoNado;
 import co.edu.ucatolica.aves.aves.supertype.TipoSonido;
 import co.edu.ucatolica.aves.aves.supertype.TipoVuelo;
 
@@ -11,6 +12,7 @@ import co.edu.ucatolica.aves.aves.supertype.TipoVuelo;
 public abstract class Ave {
     public TipoSonido tipoSonido;
     public TipoVuelo tipoVuelo;
+    public TipoNado tipoNado;
 
     public void realizaVuelo(){
         tipoVuelo.vuelo();
@@ -19,4 +21,6 @@ public abstract class Ave {
     public void  realizaSonido(){
         tipoSonido.makeSound();
     }
+
+    public void  realizarNado() { tipoNado.nado();}
 }
